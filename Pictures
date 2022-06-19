@@ -1,0 +1,9 @@
+#!/bin/sh
+# title="$icon_gps Test"
+# include common definitions
+# shellcheck source=scripts/core/sxmo_common.sh
+. sxmo_common.sh
+
+feh --scale-down ~/Pictures/*.jpg
+#feh --zoom 17 ~/Pictures/*.jpg
+#feh -i ~/Pictures/*.jpg
