@@ -62,15 +62,12 @@ del() {
 show() {
 	_sorted_components_name | while read -r id; do
 		if [ "$id" == "99-time" ]; then
-#			ttime=$(($(date +"%H")%12)):$(date +"%M")$(date +"%P")
-#			echo $(($(date +"%H")%12)):$(date +"%M") $(date +"%P") > "$ROOT/$id"
-			ttime="$(($(date +"%H")%12))"
-			if [ "$ttime" == 0 ]; then
-				ttime=12
-			fi
-			echo $ttime:$(date +"%M")$(date +"%P") > "$ROOT/$id"
-#			echo $(($(date +"%H")%12)):$(date +"%M")$(date +"%P") > "$ROOT/$id"
-#			echo $ttime > "$ROOT/$id"
+#			ttime="$(($(date +"%H")%12))"
+#			if [ "$ttime" == 0 ]; then
+#				ttime=12
+#			fi
+#			echo $ttime:$(date +"%M")$(date +"%P") > "$ROOT/$id"
+			echo $(date +"%-I:%M%P") > "$ROOT/$id"
 		fi
 		tr '\n' ' ' < "$ROOT/$id"
 		printf " "
