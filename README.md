@@ -1,4 +1,4 @@
-# userscripts
+# scripts
 
 ## Pictures
 Install feh using
