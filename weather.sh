@@ -57,6 +57,9 @@ printtables() {
 		tempc=$(echo $TEMP | cut -f$i -d' ')
 		humidityc=$(echo $HUMIDITY | cut -f$i -d' ')
 		echo $timefc$'\t'$tempc$'\t'$humidityc
+		if [ "$timefc" == "11a" ]; then
+			read -n1 -rsp $''
+		fi
 		if [ "$timefc" == "11p" ]; then
 			di=$(($di+1))
 			if [ "$di" == 1 ]; then
@@ -75,7 +78,8 @@ printtables() {
 				date2=$(echo $(date --date='7 days' +"%A"))
 			fi
 
-			read -n1 -rsp $'\n'
+			read -n1 -rsp $''
+			echo ""
 			echo $date2
 			echo "Time"$'\t'"T(C)"$'\t'"Hum"
 			echo "----------------------------"
