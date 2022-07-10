@@ -21,7 +21,7 @@ sudo apk add date
 
 ## sxmo_weather.sh
 
-Put this userscript in /usr/bin/
+Put this userscript in ~/.config/sxmo/userscripts/
 
 This is a modification of sxmo_weather.sh to display the hourly weather vertically instead of horizontally.  The time is diaplayed in am/pm format.  For the current day, the hourly weather is displayed for the rest of the day.  The weather for the remaining days is displayed in 12 hour increments each time the  user presses a key.
 
