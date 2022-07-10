@@ -19,7 +19,7 @@ sudo apk add date
 <img src="https://github.com/ColeGirders/userscripts/blob/main/status_bar_time_format.png" width="250"/>
 
 
-## sxmo_weather.sh
+## weather.sh
 
 Put this userscript in ~/.config/sxmo/userscripts/
 
